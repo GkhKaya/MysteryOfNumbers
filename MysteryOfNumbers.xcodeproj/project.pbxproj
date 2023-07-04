@@ -12,6 +12,8 @@
 		6ED5152A2A5350600096ECF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515292A5350600096ECF0 /* Assets.xcassets */; };
 		6ED5152D2A5350600096ECF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5152C2A5350600096ECF0 /* Preview Assets.xcassets */; };
 		6ED515342A5350A60096ECF0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515332A5350A60096ECF0 /* .gitignore */; };
+		6ED515412A53FB180096ECF0 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515402A53FB180096ECF0 /* Colors.xcassets */; };
+		6ED515432A53FB290096ECF0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515422A53FB290096ECF0 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,8 @@
 		6ED515292A5350600096ECF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED5152C2A5350600096ECF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6ED515332A5350A60096ECF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		6ED515402A53FB180096ECF0 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		6ED515422A53FB290096ECF0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,9 +57,13 @@
 		6ED515242A53505F0096ECF0 /* MysteryOfNumbers */ = {
 			isa = PBXGroup;
 			children = (
+				6ED515392A53FAA30096ECF0 /* Utils */,
+				6ED515382A53FA930096ECF0 /* Resources */,
+				6ED515372A53FA8C0096ECF0 /* Features */,
+				6ED515362A53FA790096ECF0 /* Product */,
+				6ED515352A53FA740096ECF0 /* Core */,
 				6ED515252A53505F0096ECF0 /* MysteryOfNumbersApp.swift */,
 				6ED515272A53505F0096ECF0 /* ContentView.swift */,
-				6ED515292A5350600096ECF0 /* Assets.xcassets */,
 				6ED5152B2A5350600096ECF0 /* Preview Content */,
 				6ED515332A5350A60096ECF0 /* .gitignore */,
 			);
@@ -68,6 +76,108 @@
 				6ED5152C2A5350600096ECF0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		6ED515352A53FA740096ECF0 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6ED5153A2A53FAAC0096ECF0 /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6ED515362A53FA790096ECF0 /* Product */ = {
+			isa = PBXGroup;
+			children = (
+				6ED515442A53FB3B0096ECF0 /* Widgets */,
+			);
+			path = Product;
+			sourceTree = "<group>";
+		};
+		6ED515372A53FA8C0096ECF0 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				6ED5153B2A53FAC30096ECF0 /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		6ED515382A53FA930096ECF0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6ED5153C2A53FAD40096ECF0 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		6ED515392A53FAA30096ECF0 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6ED5153F2A53FB010096ECF0 /* Extensions */,
+				6ED5153E2A53FAFC0096ECF0 /* Enums */,
+				6ED5153D2A53FAEE0096ECF0 /* Locale */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		6ED5153A2A53FAAC0096ECF0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6ED5153B2A53FAC30096ECF0 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		6ED5153C2A53FAD40096ECF0 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				6ED515292A5350600096ECF0 /* Assets.xcassets */,
+				6ED515402A53FB180096ECF0 /* Colors.xcassets */,
+				6ED515422A53FB290096ECF0 /* Images.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		6ED5153D2A53FAEE0096ECF0 /* Locale */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Locale;
+			sourceTree = "<group>";
+		};
+		6ED5153E2A53FAFC0096ECF0 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		6ED5153F2A53FB010096ECF0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		6ED515442A53FB3B0096ECF0 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				6ED515452A53FB440096ECF0 /* Buttons */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		6ED515452A53FB440096ECF0 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -129,6 +239,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6ED5152D2A5350600096ECF0 /* Preview Assets.xcassets in Resources */,
+				6ED515432A53FB290096ECF0 /* Images.xcassets in Resources */,
+				6ED515412A53FB180096ECF0 /* Colors.xcassets in Resources */,
 				6ED515342A5350A60096ECF0 /* .gitignore in Resources */,
 				6ED5152A2A5350600096ECF0 /* Assets.xcassets in Resources */,
 			);
