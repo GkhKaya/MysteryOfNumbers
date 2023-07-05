@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6E5AA8F52A55338B003232AA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5AA8F42A55338B003232AA /* Kingfisher */; };
+		6E5AA8F82A55339C003232AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5AA8F72A55339C003232AA /* Alamofire */; };
 		6ED515262A53505F0096ECF0 /* MysteryOfNumbersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED515252A53505F0096ECF0 /* MysteryOfNumbersApp.swift */; };
-		6ED515282A53505F0096ECF0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED515272A53505F0096ECF0 /* ContentView.swift */; };
+		6ED515282A53505F0096ECF0 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED515272A53505F0096ECF0 /* MainView.swift */; };
 		6ED5152A2A5350600096ECF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515292A5350600096ECF0 /* Assets.xcassets */; };
 		6ED5152D2A5350600096ECF0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED5152C2A5350600096ECF0 /* Preview Assets.xcassets */; };
 		6ED515342A5350A60096ECF0 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 6ED515332A5350A60096ECF0 /* .gitignore */; };
@@ -19,7 +21,7 @@
 /* Begin PBXFileReference section */
 		6ED515222A53505F0096ECF0 /* MysteryOfNumbers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MysteryOfNumbers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED515252A53505F0096ECF0 /* MysteryOfNumbersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MysteryOfNumbersApp.swift; sourceTree = "<group>"; };
-		6ED515272A53505F0096ECF0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		6ED515272A53505F0096ECF0 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		6ED515292A5350600096ECF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED5152C2A5350600096ECF0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6ED515332A5350A60096ECF0 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
@@ -32,6 +34,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5AA8F52A55338B003232AA /* Kingfisher in Frameworks */,
+				6E5AA8F82A55339C003232AA /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,7 +67,6 @@
 				6ED515362A53FA790096ECF0 /* Product */,
 				6ED515352A53FA740096ECF0 /* Core */,
 				6ED515252A53505F0096ECF0 /* MysteryOfNumbersApp.swift */,
-				6ED515272A53505F0096ECF0 /* ContentView.swift */,
 				6ED5152B2A5350600096ECF0 /* Preview Content */,
 				6ED515332A5350A60096ECF0 /* .gitignore */,
 			);
@@ -130,6 +133,7 @@
 		6ED5153B2A53FAC30096ECF0 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				6ED515272A53505F0096ECF0 /* MainView.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -196,6 +200,10 @@
 			dependencies = (
 			);
 			name = MysteryOfNumbers;
+			packageProductDependencies = (
+				6E5AA8F42A55338B003232AA /* Kingfisher */,
+				6E5AA8F72A55339C003232AA /* Alamofire */,
+			);
 			productName = MysteryOfNumbers;
 			productReference = 6ED515222A53505F0096ECF0 /* MysteryOfNumbers.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +232,10 @@
 				Base,
 			);
 			mainGroup = 6ED515192A53505F0096ECF0;
+			packageReferences = (
+				6E5AA8F32A55338B003232AA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				6E5AA8F62A55339C003232AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 6ED515232A53505F0096ECF0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -253,7 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED515282A53505F0096ECF0 /* ContentView.swift in Sources */,
+				6ED515282A53505F0096ECF0 /* MainView.swift in Sources */,
 				6ED515262A53505F0096ECF0 /* MysteryOfNumbersApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -453,6 +465,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6E5AA8F32A55338B003232AA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		6E5AA8F62A55339C003232AA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6E5AA8F42A55338B003232AA /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5AA8F32A55338B003232AA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		6E5AA8F72A55339C003232AA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5AA8F62A55339C003232AA /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6ED5151A2A53505F0096ECF0 /* Project object */;
 }
